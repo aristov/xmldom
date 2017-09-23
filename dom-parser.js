@@ -246,7 +246,22 @@ function appendElement (hander,node) {
 //if(typeof require == 'function'){
 var htmlEntity = require('./entities');
 var XMLReader = require('./sax').XMLReader;
-var DOMImplementation = exports.DOMImplementation = require('./dom').DOMImplementation;
-exports.XMLSerializer = require('./dom').XMLSerializer ;
+var dom = require('./dom');
+var DOMImplementation = exports.DOMImplementation = dom.DOMImplementation;
+exports.XMLSerializer = dom.XMLSerializer;
 exports.DOMParser = DOMParser;
+
+exports.Node = dom.Node;
+exports.Element = dom.Element;
+exports.Document = dom.Document;
+exports.DocumentType = dom.DocumentType;
+exports.DocumentFragment = dom.DocumentFragment;
+exports.CharacterData = dom.CharacterData;
+exports.Text = dom.Text;
+exports.Comment = dom.Comment;
+exports.CDATASection = dom.CDATASection;
+exports.ProcessingInstruction = dom.ProcessingInstruction;
+exports.Notation = dom.Notation;
+exports.Entity = dom.Entity;
+exports.EntityReference = dom.EntityReference;
 //}
