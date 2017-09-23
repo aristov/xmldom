@@ -1237,4 +1237,18 @@ try{
 //if(typeof require == 'function'){
 	exports.DOMImplementation = DOMImplementation;
 	exports.XMLSerializer = XMLSerializer;
+
+	exports.Node = Node;
+	exports.Element = Element;
+	exports.Document = Document;
+	exports.DocumentType = DocumentType;
+	exports.DocumentFragment = DocumentFragment;
+	exports.CharacterData = CharacterData;
+	exports.Text = Text;
+	exports.Comment = Comment;
+	exports.CDATASection = CDATASection;
+	exports.ProcessingInstruction = ProcessingInstruction;
+	exports.Notation = Notation;
+	exports.Entity = Entity;
+	exports.EntityReference = EntityReference;
 //}
